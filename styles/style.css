@@ -54,8 +54,9 @@ body {
 
 /* ========== HERO SECTION ========== */
 .hero {
-  background: url('images/hero.jpg') no-repeat center center/cover;
-  height: 75vh;
+  /* background: url('images/home.png') no-repeat center center/cover; */
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST7Q5LJX206d4r08bEuz9QnSVRaZGYV5e2NQ&s') no-repeat top center/cover;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -550,16 +551,24 @@ details[open] {
 }
 
 /* -------- HERO / INTRO -------- */
+
+
 .about-hero {
-  background: url('images/about-hero.jpg') no-repeat center center/cover;
-  color: #fff;
-  padding: 6rem 0;
-  position: relative;
+  background: url('../images/about.png') no-repeat center center;
+  background-size: cover;      /* ✅ keeps proportions, fills width naturally */
+  background-position: center; /* ✅ keeps subject centered */
+  height: 60vh;                /* ✅ only 60% of viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
+
+
+
 
 .about-hero::before {
   content: "";
@@ -846,14 +855,19 @@ details[open] {
 }
 
 /* ===== HERO / INTRO ===== */
+
 .blog-hero {
-  background: url('images/blog-hero.jpg') no-repeat center center/cover;
-  color: #fff;
-  padding: 4.5rem 0;
-  position: relative;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQn0cQL3gW87gJkFz17L0DW4qv-b-d36481w&s') no-repeat center center;
+  background-size: cover;      /* ✅ keeps proportions, fills width naturally */
+  background-position: center; /* ✅ keeps subject centered */
+  height: 60vh;                /* ✅ only 60% of viewport height */
   display: flex;
   align-items: center;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .blog-hero::before {
@@ -1547,8 +1561,9 @@ details[open] {
    ======================================*/
 /* ===== HERO SECTION ===== */
 .book-hero {
-  background: url('images/book-hero.jpg') no-repeat center center/cover;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw3jDrggGpCvr9zvtKD-2rRUdgetWQ5WNR-Q&s') no-repeat center center/cover;
   color: #fff;
+  height: 60vh;
   text-align: center;
   padding: 6rem 1rem;
   position: relative;
@@ -1802,18 +1817,49 @@ details[open] {
    =========================================== */
 
 /* ===== COMMON HERO SECTIONS ===== */
-.hotel-hero,
-.flight-hero {
-  background: url('images/hotel-hero.jpg') no-repeat center center/cover;
-  color: #fff;
+/* .hotel-hero, */
+/* .flight-hero { */
+  /* background: url('images/hotel-hero.jpg') no-repeat center center/cover; */
+  /* color: #fff; */
+  /* text-align: center; */
+  /* padding: 6rem 1rem; */
+  /* position: relative; */
+/* } */
+
+
+.hotel-hero {
+  background: url('https://content.skyscnr.com/available/1977390022/1977390022_WxH.jpg') no-repeat center center;
+  background-size: cover;      /* ✅ keeps proportions, fills width naturally */
+  background-position: center; /* ✅ keeps subject centered */
+  height: 60vh;                /* ✅ only 60% of viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 6rem 1rem;
+  color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
-.flight-hero {
+
+/* .flight-hero {
   background: url('images/flight-hero.jpg') no-repeat center center/cover;
+} */
+
+.flight-hero {
+  background: url('../images/flights.png') no-repeat center center;
+  background-size: cover;      /* ✅ keeps proportions, fills width naturally */
+  background-position: center; /* ✅ keeps subject centered */
+  height: 60vh;                /* ✅ only 60% of viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
+
 
 .hotel-hero::before,
 .flight-hero::before {
