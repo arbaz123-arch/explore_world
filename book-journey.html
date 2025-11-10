@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Explore World | Book Your Journey</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Plan and book your dream journey with ExploreWorld — customize your travel experience easily." />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">🌍 ExploreWorld</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book-journey.html" class="active">Book Journey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="book-hero">
+    <div class="container">
+      <h1>Plan Your Dream Journey</h1>
+      <p class="lead">Book your next adventure with ease — choose your destination, travel dates, and preferences.</p>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING FORM SECTION ===== -->
+  <section class="book-form-section container">
+    <h2>Book Your Journey</h2>
+    <p>Fill in your details below to start planning your personalized travel experience.</p>
+
+    <form class="booking-form" action="#" method="post">
+
+      <!-- Personal Info -->
+      <fieldset class="booking-group">
+        <legend>Traveler Information</legend>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Trip Details -->
+      <fieldset class="booking-group">
+        <legend>Journey Details</legend>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select Destination</option>
+              <option>Paris</option>
+              <option>Bali</option>
+              <option>Tokyo</option>
+              <option>New York</option>
+              <option>London</option>
+              <option>Dubai</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" name="start-date" required />
+          </div>
+
+          <div class="form-field">
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" name="end-date" required />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset class="booking-group">
+        <legend>Travel Preferences</legend>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="travelers">Number of Travelers</label>
+            <input type="number" id="travelers" name="travelers" min="1" max="10" placeholder="1" required />
+          </div>
+
+          <div class="form-field">
+            <label for="package">Select Package</label>
+            <select id="package" name="package" required>
+              <option value="">Select a Package</option>
+              <option>Economy</option>
+              <option>Premium</option>
+              <option>Luxury</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="preferences">Special Requests or Preferences</label>
+          <textarea id="preferences" name="preferences" rows="4" placeholder="Mention any dietary needs, adventure interests, etc."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Newsletter & Consent -->
+      <div class="form-field checkbox-field">
+        <label>
+          <input type="checkbox" name="newsletter" />
+          Subscribe to our newsletter for exclusive offers
+        </label>
+      </div>
+
+      <div class="form-field checkbox-field">
+        <label>
+          <input type="checkbox" name="consent" required />
+          I agree to the terms and conditions of ExploreWorld
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit" class="btn submit-btn">Confirm My Journey</button>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- ===== WHY CHOOSE US SECTION ===== -->
+  <section class="why-book container">
+    <h2>Why Book With ExploreWorld?</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Trusted Experience</h3>
+        <p>Thousands of travelers trust ExploreWorld for safe, reliable, and memorable journeys.</p>
+      </div>
+      <div class="why-card">
+        <h3>Customizable Packages</h3>
+        <p>From luxury vacations to budget getaways — personalize your itinerary your way.</p>
+      </div>
+      <div class="why-card">
+        <h3>24/7 Assistance</h3>
+        <p>Our support team is available anytime during your travel to help with any concerns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>© 2025 ExploreWorld. All Rights Reserved.</p>
+      <p>Follow us on 
+        <a href="#">Instagram</a> | 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
