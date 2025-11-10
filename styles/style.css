@@ -536,3 +536,301 @@ details[open] {
   }
 }
 
+
+
+
+
+/* ===== ABOUT PAGE STYLES ===== */
+
+/* Container helper used on other pages; if not present, this ensures consistent width */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* -------- HERO / INTRO -------- */
+.about-hero {
+  background: url('images/about-hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 6rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10,25,47,0.55);  /* cinematic overlay matching site */
+}
+
+.about-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  padding: 0 1rem;
+  animation: fadeUp 700ms ease both;
+}
+
+.about-hero h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.4px;
+}
+
+.about-hero .lead {
+  font-size: 1rem;
+  color: #e8f4ff;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* -------- MISSION / VALUES -------- */
+.mission {
+  padding: 3.5rem 0;
+  background: #fff;
+  color: #222;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.mission-card {
+  background: #f9fbff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(2,46,88,0.04);
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.mission-card h3 {
+  color: #023e8a;
+  margin-bottom: 0.5rem;
+}
+
+.mission-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.15rem;
+  color: #444;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(2,46,88,0.08);
+}
+
+/* -------- STATS HIGHLIGHT -------- */
+.stats {
+  padding: 2.5rem 0;
+  background: linear-gradient(180deg, #fff 0%, #f7fbff 100%);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.stat {
+  padding: 1rem;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0077b6;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+  transform-origin: center;
+  animation: popIn 700ms ease both;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #445;
+}
+
+/* -------- TEAM GRID -------- */
+.team {
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+  align-items: start;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(2,46,88,0.05);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  cursor: default;
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.95);
+  transition: transform 350ms ease;
+}
+
+.team-card figcaption {
+  padding: 1rem;
+}
+
+.team-card strong {
+  display: block;
+  color: #023e8a;
+  margin-bottom: 0.15rem;
+}
+
+.team-card span {
+  display: block;
+  color: #666;
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
+}
+
+.team-card p.small {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0;
+}
+
+/* team hover effect */
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(2,46,88,0.09);
+}
+
+.team-card:hover img {
+  transform: scale(1.05);
+}
+
+/* -------- TIMELINE / MILESTONES -------- */
+.timeline {
+  padding: 3rem 0;
+  background: linear-gradient(180deg, #f7fbff 0%, #fff 100%);
+}
+
+.milestones {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.milestones li {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid #0077b6;
+  box-shadow: 0 6px 18px rgba(2,46,88,0.04);
+}
+
+.milestones time {
+  display: block;
+  color: #0077b6;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.milestones h4 {
+  margin: 0 0 0.4rem;
+  color: #023e8a;
+}
+
+.milestones p {
+  margin: 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* -------- CTA BOX -------- */
+.cta {
+  padding: 3rem 0 4rem;
+  background: #fff;
+}
+
+.cta-box {
+  background: linear-gradient(90deg, rgba(0,119,182,0.06), rgba(2,62,138,0.04));
+  border-radius: 12px;
+  padding: 1.6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(2,46,88,0.04);
+}
+
+.cta-box h3 {
+  margin: 0 0 0.25rem;
+  color: #023e8a;
+  font-size: 1.25rem;
+}
+
+.cta-box p {
+  margin: 0;
+  color: #334;
+}
+
+.cta-box .btn {
+  padding: 0.6rem 1.15rem;
+  border-radius: 26px;
+}
+
+/* Small screens: stack CTA content */
+@media (max-width: 720px) {
+  .cta-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* -------- UTILITY ANIMATIONS -------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  from { transform: scale(0.96); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* subtle entrance for mission cards */
+.mission-card { animation: fadeUp 500ms ease both; }
+
+/* small helpful responsive tweaks */
+@media (max-width: 900px) {
+  .about-hero { padding: 4.5rem 0; }
+  .team-card img { height: 200px; }
+  .stat-number { font-size: 1.35rem; }
+}
+
+@media (max-width: 480px) {
+  .about-hero { padding: 3.5rem 0; }
+  .team-card img { height: 150px; }
+  .mission-card { padding: 1rem; }
+}
