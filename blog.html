@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore World | Blog</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <meta name="description" content="ExploreWorld Travel Blog — tips, guides, and stories to help you travel smarter." />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar" role="banner">
+    <div class="logo">🌍 ExploreWorld</div>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== BLOG HERO ===== -->
+  <main>
+    <section class="blog-hero" aria-labelledby="blog-title">
+      <div class="container">
+        <h1 id="blog-title">Travel Blog</h1>
+        <p class="lead">Practical tips, destination guides, and inspiration from the ExploreWorld team.</p>
+      </div>
+    </section>
+
+    <!-- ===== SEARCH & FILTER BAR ===== -->
+    <section class="blog-controls container" aria-label="Search and filters">
+      <form class="search-form" role="search" action="#" method="get">
+        <label for="search" class="visually-hidden">Search blog</label>
+        <input id="search" name="q" type="search" placeholder="Search articles, e.g. 'budget Europe'">
+        <button type="submit" class="btn">Search</button>
+      </form>
+
+      <div class="filters" aria-hidden="false">
+        <label for="category" class="visually-hidden">Filter by category</label>
+        <select id="category" name="category" aria-label="Filter by category">
+          <option value="">All categories</option>
+          <option>Tips & Tricks</option>
+          <option>Destinations</option>
+          <option>Food & Culture</option>
+          <option>Budget Travel</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- ===== MAIN LAYOUT: POSTS + SIDEBAR ===== -->
+    <section class="blog-content container" aria-label="Blog content">
+      <!-- POSTS LIST -->
+      <section class="posts" aria-labelledby="posts-heading">
+        <h2 id="posts-heading" class="sr-only">Latest posts</h2>
+
+        <!-- Post 1 -->
+        <article class="post-card" itemscope itemtype="http://schema.org/Article" aria-labelledby="post1-title">
+          <a class="post-thumb" href="blog-post-paris.html" aria-hidden="true">
+            <img src="assets/eiffil_tower.png" alt="Eiffel Tower at sunset — Paris guide" />
+          </a>
+          <div class="post-body">
+            <header>
+              <p class="post-meta">Destinations • Apr 12, 2025</p>
+              <h3 id="post1-title" itemprop="headline"><a href="blog-post-paris.html">48 Hours in Paris — A Short & Sweet Guide</a></h3>
+            </header>
+            <p itemprop="description">Short on time? Here’s how to experience the best of Paris in a weekend: timing, must-sees, and where to eat like a local.</p>
+            <p class="post-cta"><a class="btn-outline" href="blog-post-paris.html">Read more</a></p>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="post-card" itemscope itemtype="http://schema.org/Article" aria-labelledby="post2-title">
+          <a class="post-thumb" href="blog-post-bali.html" aria-hidden="true">
+            <img src="assets/bali_tips.png" alt="Bali rice terraces — Bali travel tips" />
+          </a>
+          <div class="post-body">
+            <header>
+              <p class="post-meta">Tips & Tricks • Mar 28, 2025</p>
+              <h3 id="post2-title" itemprop="headline"><a href="blog-post-bali.html">Bali on a Budget: 10 Smart Hacks</a></h3>
+            </header>
+            <p itemprop="description">Stretch your travel budget in Bali with smart transport choices, local eats, and off-season timing.</p>
+            <p class="post-cta"><a class="btn-outline" href="blog-post-bali.html">Read more</a></p>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="post-card" itemscope itemtype="http://schema.org/Article" aria-labelledby="post3-title">
+          <a class="post-thumb" href="blog-post-tokyo.html" aria-hidden="true">
+            <img src="assets/tokyo_street.png" alt="Tokyo neon street — Tokyo travel guide" />
+          </a>
+          <div class="post-body">
+            <header>
+              <p class="post-meta">Food & Culture • Feb 14, 2025</p>
+              <h3 id="post3-title" itemprop="headline"><a href="blog-post-tokyo.html">Eating in Tokyo: 7 Foods You Must Try</a></h3>
+            </header>
+            <p itemprop="description">From ramen to wagashi — a simple beginner’s food guide for first-time visitors to Tokyo.</p>
+            <p class="post-cta"><a class="btn-outline" href="blog-post-tokyo.html">Read more</a></p>
+          </div>
+        </article>
+
+        <!-- Post 4 -->
+        <article class="post-card" itemscope itemtype="http://schema.org/Article" aria-labelledby="post4-title">
+          <a class="post-thumb" href="blog-post-london.html" aria-hidden="true">
+            <img src="assets/london_skyline.png" alt="London skyline — London travel tips" />
+          </a>
+          <div class="post-body">
+            <header>
+              <p class="post-meta">Budget Travel • Jan 05, 2025</p>
+              <h3 id="post4-title" itemprop="headline"><a href="blog-post-london.html">London for Less: Smart Ways to Save</a></h3>
+            </header>
+            <p itemprop="description">London can be expensive — here are realistic ways to enjoy the city without breaking the bank.</p>
+            <p class="post-cta"><a class="btn-outline" href="blog-post-london.html">Read more</a></p>
+          </div>
+        </article>
+
+        <!-- Post 5 (example featured long-read) -->
+        <article class="post-card featured" itemscope itemtype="http://schema.org/Article" aria-labelledby="post5-title">
+          <a class="post-thumb" href="blog-post-sustainable.html" aria-hidden="true">
+            <img src="assets/sustainable.png" alt="Sustainable travel image" />
+          </a>
+          <div class="post-body">
+            <header>
+              <p class="post-meta">Sustainability • Dec 20, 2024</p>
+              <h3 id="post5-title" itemprop="headline"><a href="blog-post-sustainable.html">Sustainable Travel — Practical Tips for Responsible Trips</a></h3>
+            </header>
+            <p itemprop="description">Sustainability doesn’t have to be hard. Small choices add up — practical actions you can take on your next trip.</p>
+            <p class="post-cta"><a class="btn-outline" href="blog-post-sustainable.html">Read more</a></p>
+          </div>
+        </article>
+
+        <!-- POSTS: Pagination (static example) -->
+        <nav class="pagination" aria-label="Blog pagination">
+          <a href="#" class="page-prev" aria-disabled="true">← Newer</a>
+          <span class="page-numbers">Page 1 of 4</span>
+          <a href="#" class="page-next">Older →</a>
+        </nav>
+      </section>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-labelledby="sidebar-heading">
+        <h2 id="sidebar-heading" class="sr-only">Blog sidebar</h2>
+
+        <!-- About the blog -->
+        <div class="widget widget-about">
+          <h3>About this blog</h3>
+          <p>Practical, well-researched travel content by the ExploreWorld editorial team — tips, local guides and trusted recommendations.</p>
+        </div>
+
+        <!-- Recent posts -->
+        <div class="widget widget-recent">
+          <h3>Recent Posts</h3>
+          <ul>
+            <li><a href="blog-post-paris.html">48 Hours in Paris</a></li>
+            <li><a href="blog-post-bali.html">Bali on a Budget</a></li>
+            <li><a href="blog-post-tokyo.html">Eating in Tokyo</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="widget widget-cats">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Tips & Tricks</a></li>
+            <li><a href="#">Budget Travel</a></li>
+            <li><a href="#">Food & Culture</a></li>
+          </ul>
+        </div>
+
+        <!-- Tags -->
+        <div class="widget widget-tags" aria-label="Popular tags">
+          <h3>Popular tags</h3>
+          <div class="tags">
+            <a href="#" class="tag">#budget</a>
+            <a href="#" class="tag">#beaches</a>
+            <a href="#" class="tag">#cityguides</a>
+            <a href="#" class="tag">#food</a>
+          </div>
+        </div>
+
+        <!-- Newsletter (simple, no backend) -->
+        <div class="widget widget-newsletter">
+          <h3>Newsletter</h3>
+          <form action="#" method="post">
+            <label for="nl-email" class="visually-hidden">Email address</label>
+            <input id="nl-email" type="email" name="email" placeholder="you@example.com" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>© 2025 ExploreWorld. All Rights Reserved.</p>
+      <p>Follow us on
+        <a href="#" aria-label="Instagram">Instagram</a> |
+        <a href="#" aria-label="Facebook">Facebook</a> |
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===== ACCESSIBILITY HELPERS (hidden) ===== -->
+  <style>
+    /* Minimal utility styles used by the HTML; remove if already in your style.css */
+    .container { max-width:1100px; margin:0 auto; padding:0 1rem; }
+    .visually-hidden { position:absolute !important; height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap; }
+    .sr-only { position:absolute !important; height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap; }
+  </style>
+
+</body>
+</html>
