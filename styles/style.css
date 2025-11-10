@@ -1536,3 +1536,255 @@ details[open] {
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
+/* ======================================
+      BOOK JOURNEY PAGE STYLES
+   ======================================*/
+/* ===== HERO SECTION ===== */
+.book-hero {
+  background: url('images/book-hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.book-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 25, 47, 0.55);
+}
+
+.book-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.book-hero h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.book-hero .lead {
+  font-size: 1.05rem;
+  color: #e8f4ff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== BOOKING FORM SECTION ===== */
+.book-form-section {
+  padding: 3rem 1rem;
+}
+
+.book-form-section h2 {
+  text-align: center;
+  color: #023e8a;
+  margin-bottom: 0.5rem;
+}
+
+.book-form-section p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* ===== FORM STRUCTURE ===== */
+.booking-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(2, 46, 88, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Group sections */
+.booking-group {
+  border: 1px solid #e6eef9;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: #f8fbff;
+}
+
+.booking-group legend {
+  color: #0077b6;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0 0.6rem;
+}
+
+/* Form rows & fields */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.form-field {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-weight: 500;
+  color: #023e8a;
+  font-size: 0.95rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #cddfed;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 8px rgba(0, 119, 182, 0.2);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+/* Checkbox fields */
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Submit button */
+.form-actions {
+  text-align: center;
+}
+
+.submit-btn {
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #023e8a;
+  transform: scale(1.03);
+}
+
+/* ===== WHY CHOOSE US SECTION ===== */
+.why-book {
+  padding: 3rem 1rem 4rem;
+  text-align: center;
+  background: #f7fbff;
+}
+
+.why-book h2 {
+  color: #023e8a;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(2, 46, 88, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(2, 46, 88, 0.08);
+}
+
+.why-card h3 {
+  color: #0077b6;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.why-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .book-hero {
+    padding: 4rem 1rem;
+  }
+
+  .booking-form {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-field {
+    min-width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .why-book {
+    padding: 2rem 1rem 3rem;
+  }
+}
+
+/* ===== SIMPLE FADE-UP ANIMATION ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.booking-form,
+.why-grid {
+  animation: fadeUp 0.8s ease both;
+}
