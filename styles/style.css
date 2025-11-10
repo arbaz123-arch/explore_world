@@ -386,3 +386,153 @@ td {
 }
 
 
+
+
+
+
+
+/* ===== CONTACT PAGE ===== */
+.contact-page {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.contact-page .page-title {
+  font-size: 2.2rem;
+  color: #023e8a;
+  margin-bottom: 0.5rem;
+}
+
+.contact-page .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* FORM STYLING */
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #023e8a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background: #0077b6;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #023e8a;
+  transform: scale(1.05);
+}
+
+/* ===== FAQ SECTION ===== */
+.faq {
+  background: #f1f8ff;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+.faq h2 {
+  text-align: center;
+  color: #023e8a;
+  margin-bottom: 2rem;
+}
+
+details {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0077b6;
+}
+
+details[open] {
+  border-color: #0077b6;
+  background: #e8f4ff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+  }
+}
+
