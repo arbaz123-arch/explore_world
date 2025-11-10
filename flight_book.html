@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore World | Flight Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">🌍 ExploreWorld</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="book-journey.html">Book Journey</a></li>
+        <li><a href="flight-booking.html" class="active">Flights</a></li>
+        <li><a href="hotel-booking.html">Hotels</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="flight-hero">
+    <div class="container">
+      <h1>Book Your Flight</h1>
+      <p class="lead">Compare airlines, find the best prices, and fly to your next adventure with ease.</p>
+    </div>
+  </section>
+
+  <!-- ===== FLIGHT SEARCH FORM ===== -->
+  <section class="flight-search container">
+    <h2>Find Flights</h2>
+    <form class="flight-form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="from">From</label>
+          <input type="text" id="from" name="from" placeholder="Departure city" required>
+        </div>
+        <div class="form-field">
+          <label for="to">To</label>
+          <input type="text" id="to" name="to" placeholder="Destination city" required>
+        </div>
+        <div class="form-field">
+          <label for="depart">Departure Date</label>
+          <input type="date" id="depart" name="depart" required>
+        </div>
+        <div class="form-field">
+          <label for="return">Return Date</label>
+          <input type="date" id="return" name="return">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="passengers">Passengers</label>
+          <input type="number" id="passengers" name="passengers" min="1" max="10" placeholder="1" required>
+        </div>
+        <div class="form-field">
+          <label for="class">Class</label>
+          <select id="class" name="class" required>
+            <option value="">Select</option>
+            <option>Economy</option>
+            <option>Premium Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Search Flights</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- ===== FEATURED FLIGHTS ===== -->
+  <section class="featured-flights container">
+    <h2>Best Deals Today</h2>
+    <div class="flight-grid">
+      <article class="flight-card">
+        <h3>Paris → Bali</h3>
+        <p>Airline: Air France | Duration: 12h 30m</p>
+        <p>Price: <strong>$780</strong> (Round Trip)</p>
+        <a href="#" class="btn-outline">Book Now</a>
+      </article>
+
+      <article class="flight-card">
+        <h3>Tokyo → New York</h3>
+        <p>Airline: Japan Airlines | Duration: 13h 10m</p>
+        <p>Price: <strong>$920</strong> (Round Trip)</p>
+        <a href="#" class="btn-outline">Book Now</a>
+      </article>
+
+      <article class="flight-card">
+        <h3>London → Dubai</h3>
+        <p>Airline: Emirates | Duration: 7h 45m</p>
+        <p>Price: <strong>$540</strong> (One Way)</p>
+        <a href="#" class="btn-outline">Book Now</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>© 2025 ExploreWorld. All Rights Reserved.</p>
+      <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

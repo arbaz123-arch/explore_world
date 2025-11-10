@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore World | Hotel Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">🌍 ExploreWorld</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="book-journey.html">Book Journey</a></li>
+        <li><a href="flight-booking.html">Flights</a></li>
+        <li><a href="hotel-booking.html" class="active">Hotels</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hotel-hero">
+    <div class="container">
+      <h1>Book Your Perfect Stay</h1>
+      <p class="lead">Find the best hotels and resorts across your favorite destinations — comfort, quality, and style.</p>
+    </div>
+  </section>
+
+  <!-- ===== HOTEL SEARCH FORM ===== -->
+  <section class="hotel-search container">
+    <h2>Search Hotels</h2>
+    <form class="hotel-form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="hotel-destination">Destination</label>
+          <input type="text" id="hotel-destination" name="hotel-destination" placeholder="Enter city or region" required>
+        </div>
+        <div class="form-field">
+          <label for="checkin">Check-in Date</label>
+          <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div class="form-field">
+          <label for="checkout">Check-out Date</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div class="form-field">
+          <label for="guests">Guests</label>
+          <input type="number" id="guests" name="guests" min="1" max="10" placeholder="2" required>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Search Hotels</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- ===== FEATURED HOTELS ===== -->
+  <section class="featured-hotels container">
+    <h2>Featured Hotels</h2>
+    <div class="hotel-grid">
+      <article class="hotel-card">
+        <img src="images/hotel1.jpg" alt="Paris Luxury Suites" class="hotel-image">
+        <div class="hotel-info">
+          <h3>Paris Luxury Suites</h3>
+          <p>⭐⭐⭐⭐⭐  |  From $299/night</p>
+          <p>Located near the Eiffel Tower, enjoy modern amenities and premium comfort.</p>
+          <a href="#" class="btn-outline">View Details</a>
+        </div>
+      </article>
+
+      <article class="hotel-card">
+        <img src="images/hotel2.jpg" alt="Bali Beach Resort" class="hotel-image">
+        <div class="hotel-info">
+          <h3>Bali Beach Resort</h3>
+          <p>⭐⭐⭐⭐  |  From $180/night</p>
+          <p>Experience oceanfront luxury with authentic Balinese hospitality.</p>
+          <a href="#" class="btn-outline">View Details</a>
+        </div>
+      </article>
+
+      <article class="hotel-card">
+        <img src="images/hotel3.jpg" alt="Tokyo City Stay" class="hotel-image">
+        <div class="hotel-info">
+          <h3>Tokyo City Stay</h3>
+          <p>⭐⭐⭐  |  From $110/night</p>
+          <p>Central location with easy access to shopping and cultural attractions.</p>
+          <a href="#" class="btn-outline">View Details</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>© 2025 ExploreWorld. All Rights Reserved.</p>
+      <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
