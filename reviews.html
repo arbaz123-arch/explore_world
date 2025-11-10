@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore World | Reviews & Testimonials</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Traveler reviews and testimonials for ExploreWorld — real feedback from our community." />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">🌍 ExploreWorld</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="reviews.html" class="active">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="reviews-hero">
+      <div class="container">
+        <h1>Traveler Reviews</h1>
+        <p class="lead">Real stories and honest feedback from people who travelled with ExploreWorld.</p>
+
+        <div class="review-aggregate">
+          <strong class="avg-rating">4.9</strong>
+          <span class="avg-label">average rating</span>
+          <span class="review-count">• 3,420 reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FILTER SECTION ===== -->
+    <section class="reviews-filter container">
+      <form class="reviews-controls">
+        <select name="destination" id="filter-destination">
+          <option value="">All destinations</option>
+          <option>Paris</option>
+          <option>Bali</option>
+          <option>Tokyo</option>
+          <option>New York</option>
+          <option>London</option>
+        </select>
+
+        <select name="rating" id="filter-rating">
+          <option value="">All ratings</option>
+          <option>5 stars</option>
+          <option>4 stars & up</option>
+          <option>3 stars & up</option>
+        </select>
+
+        <div class="filter-actions">
+          <button class="btn" type="submit">Apply</button>
+          <a href="#" class="btn-outline">Reset</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section class="reviews-content container">
+      <!-- Reviews List -->
+      <section class="reviews-list">
+        <article class="review-card">
+          <header class="review-header">
+            <img src="images/traveler-1.jpg" alt="Ayesha Khan" class="reviewer-photo">
+            <div>
+              <h3 class="reviewer-name">Ayesha Khan</h3>
+              <div class="rating">⭐️⭐️⭐️⭐️⭐️ <span class="review-meta">Paris, Apr 2025</span></div>
+            </div>
+          </header>
+          <p class="review-text">The itinerary was perfect — we covered the sights without feeling rushed. The local guide was friendly and very knowledgeable.</p>
+          <footer class="review-footer">Verified traveler • Booked: Romantic Paris Escape</footer>
+        </article>
+
+        <article class="review-card">
+          <header class="review-header">
+            <img src="images/traveler-2.jpg" alt="Rohan Sharma" class="reviewer-photo">
+            <div>
+              <h3 class="reviewer-name">Rohan Sharma</h3>
+              <div class="rating">⭐️⭐️⭐️⭐️⭐️ <span class="review-meta">Bali, Mar 2025</span></div>
+            </div>
+          </header>
+          <p class="review-text">Hotels were great and the activities were well planned. Our coordinator made everything effortless.</p>
+          <footer class="review-footer">Verified traveler • Booked: Bali Adventure</footer>
+        </article>
+
+        <article class="review-card">
+          <header class="review-header">
+            <img src="images/traveler-3.jpg" alt="Neha Patel" class="reviewer-photo">
+            <div>
+              <h3 class="reviewer-name">Neha Patel</h3>
+              <div class="rating">⭐️⭐️⭐️⭐️⭐️ <span class="review-meta">Tokyo, Feb 2025</span></div>
+            </div>
+          </header>
+          <p class="review-text">Loved the food recommendations and the local experiences. A tiny hiccup at the hotel was quickly resolved.</p>
+          <footer class="review-footer">Verified traveler • Booked: Tokyo Explorer</footer>
+        </article>
+
+        <article class="review-card">
+          <header class="review-header">
+            <img src="images/traveler-4.jpg" alt="Arman Singh" class="reviewer-photo">
+            <div>
+              <h3 class="reviewer-name">Arman Singh</h3>
+              <div class="rating">⭐️⭐️⭐️⭐️⭐️ <span class="review-meta">New York, Dec 2024</span></div>
+            </div>
+          </header>
+          <p class="review-text">Well organized and good value. Loved the Broadway recommendation!</p>
+          <footer class="review-footer">Verified traveler • Booked: City Lights NY</footer>
+        </article>
+
+        <article class="review-card">
+          <header class="review-header">
+            <img src="images/traveler-5.jpg" alt="Sarah Lee" class="reviewer-photo">
+            <div>
+              <h3 class="reviewer-name">Sarah Lee</h3>
+              <div class="rating">⭐️⭐️⭐️⭐️ <span class="review-meta">London, Nov 2024</span></div>
+            </div>
+          </header>
+          <p class="review-text">Great guide and comfortable hotels. Would recommend for family travel.</p>
+          <footer class="review-footer">Verified traveler • Booked: London Family Trip</footer>
+        </article>
+
+        <nav class="pagination">
+          <a href="#" class="page-prev" aria-disabled="true">← Newer</a>
+          <span class="page-numbers">Page 1 of 12</span>
+          <a href="#" class="page-next">Older →</a>
+        </nav>
+      </section>
+
+      <!-- Sidebar: Review Form -->
+      <aside class="review-sidebar">
+        <h2>Share Your Story</h2>
+        <form class="review-form" action="#" method="post">
+          <input type="text" id="rv-name" name="name" placeholder="Your full name" required>
+          <input type="email" id="rv-email" name="email" placeholder="you@example.com" required>
+
+          <select id="rv-destination" name="destination" required>
+            <option value="">Select destination</option>
+            <option>Paris</option>
+            <option>Bali</option>
+            <option>Tokyo</option>
+            <option>New York</option>
+            <option>London</option>
+          </select>
+
+          <fieldset class="rating-select">
+            <legend>Rating:</legend>
+            <label><input type="radio" name="rating" value="5" required> ⭐️⭐️⭐️⭐️⭐️</label>
+            <label><input type="radio" name="rating" value="4"> ⭐️⭐️⭐️⭐️</label>
+            <label><input type="radio" name="rating" value="3"> ⭐️⭐️⭐️</label>
+          </fieldset>
+
+          <textarea id="rv-text" name="review" rows="4" placeholder="Write your review..." required></textarea>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            I agree to share my review publicly
+          </label>
+
+          <button class="btn submit-btn" type="submit">Submit Review</button>
+        </form>
+      </aside>
+    </section>
+
+    <!-- ===== TRUST & SAFETY SECTION ===== -->
+    <section class="trust container">
+      <h2>Trust & Safety</h2>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <h3>Verified Reviews</h3>
+          <p>We validate bookings for verified reviews only.</p>
+        </div>
+        <div class="trust-card">
+          <h3>Secure Payments</h3>
+          <p>Payments processed safely through trusted gateways.</p>
+        </div>
+        <div class="trust-card">
+          <h3>24/7 Support</h3>
+          <p>Our team is available during trips for immediate help.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>© 2025 ExploreWorld. All Rights Reserved.</p>
+      <p>Follow us on 
+        <a href="#">Instagram</a> | 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
